@@ -69,3 +69,6 @@ go mod tidy
 ## ライセンス
 
 MIT License
+
+---
+最終更新: 2025-12-03
