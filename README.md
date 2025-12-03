@@ -7,7 +7,7 @@ Go言語を体系的に学ぶためのリポジトリ
 ```
 go_learning/
 ├── basics/          # 基礎文法・型・制御構文
-├── concurrency/     # Goroutines と Channels
+├── concurrency/     # Goroutines 関連
 ├── interfaces/      # インターフェースとポリモーフィズム
 ├── testing/         # テスト駆動開発
 ├── errors/          # エラーハンドリング
