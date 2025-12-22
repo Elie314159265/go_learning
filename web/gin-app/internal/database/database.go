@@ -89,13 +89,15 @@ func AutoMigrate(db *gorm.DB) error {
 
 // Close はデータベース接続をクローズします
 // アプリケーション終了時に呼び出してリソースを解放します
-func (db *gorm.DB) Close() error {
+// 普通の関数に変更 (db を引数として受け取る)
+func Close(db *gorm.DB) error {
 	sqlDB, err := db.DB()
 	if err != nil {
 		return err
 	}
 	return sqlDB.Close()
 }
+
 
 // Ping はデータベース接続が有効かどうかをチェックします
 // ヘルスチェックエンドポイントで使用できます

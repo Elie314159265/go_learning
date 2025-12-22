@@ -32,7 +32,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("データベース接続に失敗しました: %v", err)
 	}
-	defer db.Close()
+	defer database.Close(db)
 
 	// 3. データベースマイグレーション
 	// テーブルの作成や更新を自動で行います
